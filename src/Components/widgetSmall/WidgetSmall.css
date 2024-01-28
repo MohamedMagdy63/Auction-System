@@ -1,0 +1,61 @@
+.main{
+    flex: 1;
+}
+.widgetSmall{
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.widgetSmall .widgetSmallTitle{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.8em;
+    color: var(--widgetSmall--widgetSmallTitle);
+}
+.widgetSmall .widgetSmallList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--widgetSmall--widgetSmallTitle);
+}
+.widgetSmall .widgetSmallList .widgetSmallItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--widgetSmall--widgetSmallTitle);
+}
+.widgetSmall .widgetSmallList .widgetSmallItem img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.widgetSmall .widgetSmallList .widgetSmallItem .widgetSmallUser{
+    display: flex;
+    flex-direction: column;
+}
+.widgetSmall .widgetSmallList .widgetSmallItem .widgetSmallUser .widgetSmallUsername{
+    font-weight: 600;
+}
+.widgetSmall .widgetSmallList .widgetSmallItem .widgetSmallUser .widgetSmallJob{
+    font-weight: 300;
+    width: 260px;
+    overflow: hidden;
+}
+.widgetSmall .widgetSmallList .widgetSmallItem .widgetSmallBtn{
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: var(--widgetSmall-color);
+}
+.widgetSmall .widgetSmallList .widgetSmallItem .widgetSmallBtn .icon{
+    font-size: 19px !important;
+    margin-right: 5px;
+}

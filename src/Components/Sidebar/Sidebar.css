@@ -1,0 +1,142 @@
+.sidebar{
+    left: 0;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    background: radial-gradient(circle at 10% 10% , rgb(3 91 91) 20%, rgb(16 78 78) 30%, 
+                                                    rgb(25 95 95) 40%, rgb(4 215 215) 70%);
+    padding: 0;
+    transition: 0.3s all ease-in-out;
+    z-index: 999;
+}
+.sidebarOpen{
+    width: 25%;
+    padding: 10px;
+}
+
+.werpper{
+    position: relative;
+}
+.werpper .link{
+    text-decoration: none;
+}
+.userProfile{
+    display: flex;
+    align-items: center;
+    width: 360px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.userProfile::before{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 247, 156);
+    position: absolute;
+    top: 105%;
+}
+.userProfile .userImg{
+    width: 30%;
+}
+.userProfile .userImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.userInfo{
+    width: 70%;
+}
+.userInfo h1{
+    width: 100%;
+    line-height: 10px;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: rgb(0, 247, 156);
+}
+.userInfo p{
+    color: aliceblue;
+    font-weight: 400;
+}
+.sidebarItemsContiner{
+    width: 290px;
+}
+.sidebarItem{
+    width: 120%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.sidebarItem.active{
+    color: rgb(0, 247, 156);
+}
+.sidebarItem:hover{
+    color: rgb(0, 247, 156);
+}
+.logOutContiner{
+    width: 120%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.logOutContiner.active{
+    color: rgb(0, 247, 156);
+}
+.logOutContiner:hover{
+    color: rgb(0, 247, 156);
+}
+.sidebarIcon{
+    width: 50px;
+}
+.sidebarTitle{
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+}
+.sidebarTitle .notification{
+    margin-left: 42px;
+    font-weight: 600;
+    background: #be0fa4;
+    width: 132px;
+    text-align: center;
+    border-radius: 50px;
+    color: aliceblue;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width:1000px){
+    .userInfo{
+        flex: 5;
+    }
+    .sidebarOpen{
+        width: 100%;
+    }    
+    .userProfile .userImg img{
+        width: 50px;
+        height: 50px;
+    }
+    .userInfo h1{
+        font-size: 15px;
+    }
+    .userInfo p{
+        display: none;
+    }
+    .sidebarIcon{
+        width: 25px;
+        margin-right: 20px;
+    }
+    .sidebarTitle{
+        font-size: 15px;
+    }
+}

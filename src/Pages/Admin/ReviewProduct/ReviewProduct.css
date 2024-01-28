@@ -1,0 +1,258 @@
+.reviewProduct{
+    flex: 4;
+}
+.reviewProduct .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #dfc;
+    border-color: #dfc transparent #dfc transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+.reviewProduct .infoContiner{
+    width: 100%;
+    color: var(--MuiTypography-colorInherit);
+    height: 100%;
+    display: flex;
+}
+.reviewProduct .infoContiner .prductImages{
+    width: 60%;
+    display: flex;
+    position: sticky;
+}
+.reviewProduct .infoContiner .prductImages .slider{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+    height: 70vh;
+    overflow-x: auto;
+}
+.reviewProduct .infoContiner .prductImages .slider::-webkit-scrollbar {
+    width: 20px;
+  }
+.reviewProduct .infoContiner .prductImages .slider .imageSlider{
+    width: 100%;
+    height:120px;
+    position: relative;
+    top: 40%;
+    opacity: 0.5;
+}
+.reviewProduct .infoContiner .prductImages .slider .imageSlider img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.reviewProduct .infoContiner .prductImages .slider .imageSlider.active{
+    opacity: 1;
+}
+.reviewProduct .infoContiner .prductImages .slider .imageSlider.active::before{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: black;
+    z-index: 999;
+}
+.imageProvider{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageProvider .imageHolder{
+    height: 70%;
+    position: relative;
+}
+.imageProvider .imageHolder::before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 20%;
+    width: 60%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.697);
+    filter: blur(15px);
+    z-index: 999;
+}
+.imageProvider .imageHolder img{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+.productData{
+    width: 40%;
+    height: 90vh;
+    padding: 10px;
+    overflow-x:hidden ;
+}
+.productData .mainData{
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.productData .mainData::before{
+    content: '';
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background-color: rgb(173, 173, 173);
+    filter: blur(2px);
+}
+.productData .mainData .brand{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-left: 5px;
+}
+.productData .mainData .name{
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.productData .mainData .model{
+    font-size: 25px;
+    opacity: 0.3;
+    margin-left: 5px;
+}
+.productData .description{
+    width: 97%;
+    font-size: 18px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: justify
+}
+.productData .description::before{
+    content: '';
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background-color: rgb(173, 173, 173);
+    filter: blur(2px);
+}
+.productData .secData{
+    width: 90%;
+    padding: 20px;
+    position: relative;
+}
+.productData .secData::before{
+    content: '';
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(173, 173, 173);
+    filter: blur(2px);
+}
+.productData .secData .data{
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.productData .secData .data .head{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--MuiTypography-colorInherit);
+    width: 50%;
+}
+.productData .secData .data .value{
+    color: var(--MuiTypography-colorInherit);
+    width: 50%;
+    font-size: 22px;
+    opacity: 0.3;
+}
+.control .price{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--Pending-button-color);
+    margin-bottom: 20px;
+}
+.control .actions{
+    width: 98%;
+}
+.control .actions .accept{
+    width: 50%;
+    padding: 10px;
+}
+.control .actions .accept,
+.control .actions .refuse{
+    width: 45%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: var(--background-button-product);
+    border: none;
+    position: relative;
+    z-index: 3;
+}
+.control .actions .accept::before,
+.control .actions .refuse::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: black;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.control .actions .accept:hover::before,
+.control .actions .refuse:hover::before{
+    width: 100%;
+}
+
+
+
+

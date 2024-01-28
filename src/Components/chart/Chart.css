@@ -1,0 +1,32 @@
+.chart{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.chart .chartTitle{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.8em;
+    margin-bottom: 10px;
+    color: var(--chart-title-color);
+}
+.chart .headerChart .Year input{
+    border: none;
+    background-color:var(--calender--chart--background );
+    color:  var(--calender--chart--color);
+}
+.chart .headerChart .Year input::-webkit-calendar-picker-indicator{
+    background-color: #ffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.headerChart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

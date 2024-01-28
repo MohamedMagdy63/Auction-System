@@ -1,0 +1,68 @@
+div>.favContainer {
+    font-size: 12px;
+    background-color:#f5f5f5;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 15px;
+    width: 700px;
+    height: 60vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .favContainer > .leftContainer img{
+    position: absolute;
+    width: 450px;
+    height: 60vh;
+  }
+  .favContainer > .reightContainer{
+    position: absolute;
+    top: 12.5vh;
+    left:-100px;
+    background-color: #ecf0f1;
+    width: 390px;
+    height: 35vh;
+    margin-left: 400px;
+  }
+
+  .favContainer >.reightContainer .header {
+    width: 100%;
+    color: #7f8c8d;
+    padding: 15px;
+    margin: 15px;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 5px;
+  }
+ 
+  .favContainer >.reightContainer  .content {
+    padding: 10px;
+    color: #7f8c8d;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .favContainer > .reightContainer .actions .NavLinkItem  .button {
+    background-color: #40b0e0;
+    color: #ffffff;
+    margin-top: 40px;
+    width: 160px;
+    height: 5vh;
+    border: none;
+    overflow: none;
+    margin-left: 22.5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .favContainer > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px white;
+  }

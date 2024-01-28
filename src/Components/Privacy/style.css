@@ -1,0 +1,14 @@
+.privacyContainer{
+    background-color:aliceblue;
+}
+.privacyContainer .privacyContainerImg .privacyContainerImgItem{
+    width: 100%;
+    height: 30vh;
+    object-fit:contain;
+}
+.privacyContainer .privacyContainerText{
+    margin: 5%;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}

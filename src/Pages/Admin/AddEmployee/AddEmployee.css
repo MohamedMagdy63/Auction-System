@@ -1,0 +1,141 @@
+.addEmployee{
+    flex: 4;
+}
+.addEmployee .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #dfc;
+    border-color: #dfc transparent #dfc transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+.employeeContiner{
+    color: var(--admin--deposite--slides);
+    width: 96%;
+    height: 90%;
+    margin: 20px;
+    border: 1px solid var(--admin--deposite--slides);
+}
+.employeeContiner .pageTitle{
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+}
+.employeeContiner .employeeInfo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.employeeContiner .employeeInfo .infoContent{
+    width: 100%;
+}
+.employeeContiner .employeeInfo .infoContent input{
+    background-color: rgb(253, 253, 253);
+    border: 1px solid rgba(0, 0, 0, 0.489);
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    opacity: 1;
+}
+.employeeContiner .employeeInfo .infoContent input:focus{
+    outline: none;
+}
+.employeeContiner .employeeInfo .miniContiner{
+    display: flex;
+}
+.employeeContiner .employeeInfo .miniContiner .infoContent select{
+    width: 88%;
+    padding: 10px;
+    opacity: 0.7;
+    font-size: 16px;
+}
+.employeeContiner .employeeInfo .miniContiner .infoContent select:focus{
+    outline: none;
+}
+.employeeContiner .submitBtn{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    display:flex;
+}
+.employeeContiner .submitBtn button{
+    margin: 25px;
+    width: 87%;
+    padding: 10px;
+    background-color: #ff4153;
+    font-size: 20px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.employeeContiner .submitBtn .iconStyle{
+    height: 8.5vh;
+    width: 3.5vw;
+    color: #ff4153;
+}
+.employeeContiner .submitBtn .iconStyle:hover{
+    color: var(--admin--addemployee--hover);
+}
+.employeeContiner .submitBtn button::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--admin--addemployee--hover);
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+.employeeContiner .submitBtn button:hover::before{
+    transform: scale(1);
+}
+  

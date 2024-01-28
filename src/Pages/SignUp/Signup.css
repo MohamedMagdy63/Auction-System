@@ -1,0 +1,156 @@
+.containerSignUp{
+    width: 100%;
+    height: 145vh;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-size:fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    /* https://i.pinimg.com/564x/d9/b4/2b/d9b42be37e37426f2083a4f8ac073d8a.jpg */
+    /* https://media.discordapp.net/attachments/990816806581198869/1089393788276977796/grid_0.webp?width=662&height=662 */
+}
+.containerSignUp .wrapperSignUp{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 40%;
+    padding: 30px;
+    background-color: #60a3bc;
+}
+/*
+  font-size:18px;
+  width: 30%;
+  border: none;
+  margin:5px;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+
+
+*/
+/* CSS */
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  width: 180px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+.privacyLink{
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+}
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+.form-control {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+.form-control input[type="checkbox"] {
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  display: grid;
+  place-content: center;
+  transform: translateY(20px);
+}
+.form-control + .form-control {
+  margin-top: 1em;
+}
+.form-control input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  background-color: #60a3bc;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+.form-control input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+@media only screen and (max-width :1000px) {
+    .containerSignUp{
+        height: 170vh;
+    }
+    .containerSignUp .wrapperSignUp{
+        width: 75%;
+    }
+    .containerSignUp .wrapperSignUp .buttonSignup{
+        width: 150px;
+    }
+    
+}
+@media only screen and (max-width :400px) {
+    .containerSignUp{
+        height:150vh;
+    }
+    .containerSignUp .wrapperSignUp{
+        width: 85%;
+    }
+    .containerSignUp .wrapperSignUp .buttonSignup{
+        width: 150px;
+    }
+   
+}

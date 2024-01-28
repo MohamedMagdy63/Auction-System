@@ -1,0 +1,211 @@
+.deposite{
+    flex: 4;
+    position: relative;
+    overflow: hidden;
+}
+.deposite .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #dfc;
+    border-color: #dfc transparent #dfc transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+.depositSliderContinner{
+    position: absolute;
+    top: 5%;
+    /* width: 1190px; */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.depositCarts{
+    position: relative;
+    right: -6%;
+    width: 700px;
+    height: 70vh;
+    border-radius: 10px;
+    border: none;
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    box-shadow: -1px -1px 17px 0px var(--admin--deposite--boxshadow);
+    -webkit-box-shadow: -1px -1px 17px 0px var(--admin--deposite--boxshadow);
+    -moz-box-shadow: -1px -1px 17px 0px var(--admin--deposite--boxshadow);
+}
+.depositCarts .resipe{
+    width: 55%;
+}
+.depositCarts .resipe img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.depositCarts .resipeData{
+    width: 45%;
+    padding: 10px;
+    color: var(--admin--deposite--recipe--text--boxshadow);
+}
+.depositCarts .resipeData .resipeTitle{
+    font-weight: 400;
+    font-size: 25px;
+    border-bottom: 1px solid var(--admin--deposite--recipe--bottom--border--boxshadow);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.depositCarts .resipeData .clientName,
+.depositCarts .resipeData .realPrice,
+.depositCarts .resipeData .percentage,
+.depositCarts .resipeData .priceAfterPercentage{
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid var(--admin--deposite--recipe--bottom--border--boxshadow);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.depositCarts .resipeData .clientName{
+    font-style: italic;
+}
+.depositCarts .resipeData span{
+    font-weight: 700;
+    font-style: italic;
+    opacity: 0.7;
+    margin-left: 20px;
+}
+.depositCarts .resipeData .auctionNumber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--admin--deposite--recipe--bottom--border--boxshadow);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.depositCarts .resipeData .auctionNumber .number{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid var(--admin--deposite--recipe--bottom--border--boxshadow);
+    border-radius: 50%; 
+}
+.depositCarts .resipeData .auctionNumber .productName{
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+}
+.depositCarts .resipeData .controller{
+    position: relative;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.depositCarts .resipeData .controller .accept,
+.depositCarts .resipeData .controller .refuse{
+    width: 120px;
+    height: 30px;
+    background-color: var(--admin--deposite--recipe--button);
+    color: var(--admin--deposite--recipe--button-text);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+.depositCarts .resipeData .controller .accept::before,
+.depositCarts .resipeData .controller .refuse::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--admin--deposite--recipe--button-hover);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+.depositCarts .resipeData .controller .accept:hover::before,
+.depositCarts .resipeData .controller .refuse:hover::before{
+    width: 100%;
+}
+.depositController{
+    position: absolute;
+    top: 90%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.depositController .arrowLeft,
+.depositController .arrowRight{
+    width: 30px;
+    height: 30px;
+    background-color: var(--admin--deposite--recipe--arrow-background);
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--admin--deposite--recipe--button-text);
+    cursor: pointer;
+}
+.depositController .slides{
+    font-weight: 600;
+    width: 60px;
+    color: var(--admin--deposite--slides);
+    text-align: center;
+    border: 2px solid var(--admin--deposite--slides);
+    padding: 5px;
+    user-select: none;
+}
+.notFoundPage{
+    width: 1190px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    opacity: 0.7;
+    user-select: none;
+}
+

@@ -1,0 +1,111 @@
+.permission{
+    flex: 4;
+}
+.permission .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: var(--loader-color);
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #dfc;
+  border-color: #dfc transparent #dfc transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.permission .header_page{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+.permission .header_page .title{
+    color: var(--admin--permission--header-color);
+    font-size: 25px;
+    font-weight: 700;
+    width: 29%;
+}
+.permission .header_page .search{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.permission .header_page .search input{
+    padding: 10px;
+    width: 50%;
+    border: 1px solid black;
+}
+.permission .header_page .search input:focus{
+    outline: none;
+}
+.permission .header_page .search button{
+    padding: 10px;
+    width: 30%;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.permissionBtn,
+.blockBtn,
+.unBlockBtn{
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+    border: none;
+    background-color: var(--button-Edit-background-color);
+    cursor: pointer;
+}
+.PremissionUserImage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.PremissionUserImage img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.notFoundOtherPhone{
+  font-weight: 700;
+  opacity: 0.5;
+  font-style: italic;
+}

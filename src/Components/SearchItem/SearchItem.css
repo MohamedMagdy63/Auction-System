@@ -1,0 +1,111 @@
+
+ div>.searchContainer{
+    font-size: 12px;
+    border: 8px Solid #192a56;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 1000px;
+    height: 80vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto  auto  ;
+  
+  }
+  
+  
+  /* popUpPrice */
+  .searchContainer > .content {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0;
+    position: relative;
+    display: grid;
+    color: #192a56;
+    grid-template-rows: auto auto auto auto auto ;
+  }
+  /* imgContainer */
+  
+  .searchContainer > .content .header {
+    width: auto;
+    font-size: 26px;
+    color: #192a56;
+    font-weight: 700;
+    padding: 5px;
+    
+  }
+  .searchContainer > .content .popUpPrice{
+    color: #192a56;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .searchContainer > .content .detailTitle{
+    color: #192a56;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .searchContainer > .content .contentDesc {
+    width: 350px;
+    position: relative;
+    color: #4b6584;  
+    font-weight: 500;
+    font-size: 12px;
+    line-break:auto;
+  }
+  .searchContainer > .content .buttonsContainer .descButton{
+    width: 100px;
+    height: 6vh;
+    border: none;
+    overflow: none;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  
+  }
+  /* buttonsContainer */
+  .searchContainer > .imgContainer{
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 60vh;
+    display: flex;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .searchContainer > .imgContainer .imgItem {
+    height: 92%;
+    flex: 1;
+  }
+  .searchContainer > .imgContainer .imgItem img{
+    width: 400px;
+    height: 55%;
+  }
+  /* .searchContainer > .content .imgContainer {
+    width: 50%;
+    margin-left: 22%;
+    color: rgb(29, 74, 74);  
+    padding: 10px 5px;
+  } */
+  .searchContainer > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin:auto;
+    text-align: center;
+  }
+  .searchContainer > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px white;
+  }

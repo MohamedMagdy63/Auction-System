@@ -1,0 +1,63 @@
+.newProduct{
+    flex: 4;
+    color: var(--update-product);
+    margin: 20px;
+}
+.newProductTitle{
+    font-weight: 700;
+    font-size: 30px;
+}
+.createProductsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.verctorImage img{
+    width: 60%;
+    margin-left: 30%;
+}
+.createProductInfo{
+    display: flex;
+    flex-direction: column;
+}
+.createProductInfo label{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--label-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.createProductInfo input:not(:nth-child(02)){
+    height: 20px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid var(--border-color);
+}
+.createProductInfo input:focus{
+    outline: none;
+}
+.createProductInfo select{
+    padding: 10px;
+    height: 40px;
+    width: 300px;
+}
+.createProductInfo select:focus{
+    outline: none;
+}
+.createProductBtn{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--button-background-color);
+    border: 1px solid var(--border-color);
+    padding: 5px 30px;
+    color: var(--button-color);
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+}

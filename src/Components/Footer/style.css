@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Arvo:wght@700&family=Dancing+Script:wght@700&display=swap');
+.footerContainer{
+    width: 100%;
+    height: 10vh;
+}
+.footerContainer .socialContainer{
+    display: flex;
+    padding:10px;
+    margin-left:80%;
+}
+.footerContainer .footerProduct{
+
+    margin-top: -4%;
+    font-family: 'Alkalami', serif;
+    font-family: 'Arvo', serif;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    
+}
+.footerContainer .footerProduct h3{
+    font-size: 1.1em;
+    margin-left: 5%;
+    color: inherit;
+    text-overflow: none;
+}
+.footerContainer .footerProduct h3:hover{
+    background-color: #95afc0;
+    border-radius: 0 15px 0 15px;
+    padding: 0.5%;
+    transition: 1s ease-in;
+}
+.footerContainer .footerProduct h3 .hyberlink{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width:1000px) {
+    .footerContainer .socialContainer{
+        margin-left:60%;
+    }
+}
+@media only screen and (max-width:450px) {
+    .footerContainer .socialContainer{
+        margin-top: 3.5%;
+        margin-left:9%;
+    }
+    .footerContainer .footerProduct h3{
+        margin-left:13%;
+        margin-top: 5%;
+        font-size: 0.9em;
+    }
+}

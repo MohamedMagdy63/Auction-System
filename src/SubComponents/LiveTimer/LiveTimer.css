@@ -1,0 +1,20 @@
+.TimerContainer{
+    display: flex;
+    flex-direction: row;
+}
+.TimerContainer .liveTimer{
+    margin: 2% 0 0 4%;
+    font-weight: 700;
+    font-size: 20px;
+}
+.TimerContainer p{
+    margin: 1.5%;
+    font-size: 12px;
+    
+}
+@media only screen and (max-width:1000px) {
+    .TimerContainer .liveTimer{
+        font-size: 18px;
+        margin: 5px;
+    }
+}

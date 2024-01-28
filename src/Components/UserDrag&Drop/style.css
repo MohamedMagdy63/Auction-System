@@ -1,0 +1,53 @@
+.dropContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px dashed #CAD3C8;
+    padding: 20px;
+    height: 40vh;
+    margin-top: 20%;
+    margin-left: 10%;
+    overflow-x: hidden;
+}
+.dropContainer h1{
+    font-family: 'Lora', serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: #778ca3;
+}
+.uploads p{
+    font-weight: 500;
+    color: #ac1b11;
+}
+.dropContainer p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #b96759;
+}
+.buttonDisplay{
+    background-color: #4bcffa;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.uploads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px dashed #CAD3C8;
+    padding: 20px;
+    height: fit-content;
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.uploads ul li{
+    height: fit-content;
+    width: fit-content;
+}

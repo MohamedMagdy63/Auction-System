@@ -1,0 +1,88 @@
+.payDepositeContiner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerLoaderUserProduct{
+    width: 100%;
+}
+.progressUserProduct{
+    position: relative;
+    height: 10px;
+    width: 90%;
+    border: 10px solid #45aaf297;
+    border-radius: 15px;
+}
+.progressUserProduct .colorUserProduct{
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    background-color: #001d60d7;
+    width: 0px;
+    height: 16px;
+    border-radius: 15px;
+    animation: progressMove 4s infinite linear;    
+}
+.intialPriceField,
+.percentageField{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(15, 190, 190);
+    border-radius: 20px;
+    font-weight: 700;
+}
+.depositeField{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(255, 60, 57);
+    border-radius: 20px;
+    font-weight: 700;
+}
+.intialPriceField,
+.percentageField,
+.depositeField{
+    user-select: none;
+}
+.payDepositeBtn button{
+    width: 100%;
+    background-color: #8784c6;
+    color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+.payDepositeBtn button .icon{
+    margin-right: 10px;
+    color: aliceblue;
+}
+@keyframes progressMove{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+}

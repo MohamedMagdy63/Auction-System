@@ -1,0 +1,195 @@
+.depositePop{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5!important;
+}
+.depositeLayout{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    background-color: #fcfcfc;
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.depositeLayout .closePopup{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #ecf0f1;
+    border-radius: 50px;
+    z-index: 999;
+    user-select: none;
+    cursor: pointer;
+}
+.depositeLayout .depositePopupContiner{
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.depositeLayout .depositePopupContiner .payWays{
+    width: 100%;
+    position: relative;
+    margin-right: 50px;
+    height: 100%;
+    user-select: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.depositeLayout .depositePopupContiner .payWays .way{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.depositeLayout .depositePopupContiner .payWays .paymob{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+    margin: 10px 0 0 50px;
+}
+.depositeLayout .depositePopupContiner .payWays .paymob img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.depositeLayout .depositePopupContiner .payWays .way:not(:last-child){
+    border-bottom: 2px solid #000;
+}
+.depositeLayout .depositePopupContiner .payWays .way p{
+    width: 60%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+.depositeLayout .depositePopupContiner .payWays .way span{
+    width: 10%;
+    font-weight: 700;
+}
+.depositeLayout .depositePopupContiner .payWays::before{
+    content: '';
+    position: absolute;
+    right: -30px;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+.PayControl{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.PayControl p{
+    font-weight: 700;
+    opacity: 0.5;
+}
+.PayControl .resipeFile{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+.PayControl .uploadBTN{
+    width: 100%;
+    height: 4vh;
+    margin-bottom: 15px;
+    background-color: #ACB1D6;
+    color: #0000008d;
+    font-weight: 600;
+    border-radius: 15px;
+}
+.PayControl .uploadBTN:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+/* CSS */
+.button-6 {
+  align-items: center;
+  height: 10%;
+  background-color: #8784c6;
+  border-radius: 15px;
+  color: #dfe6e9;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+.PayControl .SubmitResipe{
+    width: 100%;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #dfe6e9;
+}
+
+@media only screen and (max-width:1000px) {
+    .depositeLayout{
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .depositeLayout .depositePopupContiner{
+        flex-direction: column;
+    }
+    .depositeLayout .depositePopupContiner .payWays::before{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+    .depositeLayout .depositePopupContiner .payWays{
+        margin-right: 0;
+    }
+    .PayControl{
+        width: 100%;
+    }
+}

@@ -1,0 +1,116 @@
+.productCards{
+    padding: 20px;
+}
+.Continer{
+    width: 100%;
+    position: relative;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 4%;
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    margin-top: 120px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    width: 250px;
+    height: 70%;
+}
+.card:hover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(206, 206, 206, 0.736);
+    z-index: -1;
+    filter: blur(2px);
+    border-radius: 30px;
+    box-shadow: 14px 14px 41px 6px rgba(31,31,31,0.75);
+    -webkit-box-shadow: 14px 14px 41px 6px rgba(31,31,31,0.75);
+    -moz-box-shadow: 14px 14px 41px 6px rgba(31,31,31,0.75);
+}
+.card_img{
+    margin-top: -12vw;
+}
+.card_img img{
+    width: 250px;
+    height: 250px;
+    transform: scale(0.8);
+    object-fit: contain;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    overflow: hidden;
+}
+.categorie{
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(92, 92, 92, 0.788);
+}
+.Price{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255 127 69);
+    padding: 10px;
+}
+
+.cardDetailsBtn{
+    padding: 10px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgb(49, 49, 49);
+    color: aliceblue;
+    cursor: pointer;
+} 
+.cardDetailsBtn:hover{
+    background-color: rgb(255 127 69);
+} 
+.productCards .Continer .controllBar .filter .filterText{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.productCards .Continer .controllBar .filter .filterText option{
+    width: 150px;
+}
+.productCards .Continer .controllBar .filterSubCategory{
+    margin: -12.5px 0 0 150px ;
+}
+.productCards .Continer .controllBar .filterSubCategory .filterText{ 
+    padding: 5px;
+}
+.productCards .Continer .controllBar .filterSubCategory .filterText option{ 
+    width: 150px;
+}
+@media only screen and (max-width:450px) {
+    .cards{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+    }
+}

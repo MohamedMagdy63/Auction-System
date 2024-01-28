@@ -1,0 +1,50 @@
+.SidebarAdmin{
+    flex: 1;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    overflow: auto;
+    transition: 0.5s ease-in-out;
+}
+.SidebarAdmin.displaySidebar{
+    flex:0;
+}
+.SidebarAdmin .sidebarWrapper{
+    padding: 10px 20px 0 20px;
+}
+.SidebarAdmin .sidebarWrapper .sidebarMenu{
+    margin-bottom: 10px;
+}
+.SidebarAdmin .sidebarWrapper .sidebarMenu .sidebartitle{
+    font-weight: 700;
+    line-height: 0.4em;
+    font-size: 18px;
+    color: var(--sidebar-header-color);
+}
+.SidebarAdmin .sidebarWrapper .sidebarMenu .sidebarList{
+    list-style: none;
+    padding: 5px;
+}
+.SidebarAdmin .sidebarWrapper .sidebarMenu .sidebarList .sidebarListItem{
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+    color: var(--sidebar-item-color);
+}
+.SidebarAdmin .sidebarWrapper .sidebarMenu .sidebarList .sidebarListItem:hover,
+.SidebarAdmin .sidebarWrapper .sidebarMenu .sidebarList .sidebarListItem.active{
+    background-color: var(--sidebar-hover-color);
+    color: var(--sidebar-item-active-color);
+}
+.SidebarAdmin .sidebarWrapper .sidebarMenu .sidebarList .sidebarListItem span{
+    margin-right: 10px;
+    font-size: 20px;
+}

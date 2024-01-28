@@ -1,0 +1,163 @@
+.user{
+    flex: 4;
+    padding: 20px;
+    color: var(--update-user);
+    height: 70vh;
+}
+.userEditWerpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userEditWerpper .userEditTitle{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 0.8em;
+}
+.userEditWerpper .userEditBtn .editBtn{
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10% 15px;
+    font-weight: 400;
+    background-color: var(--button-Edit-background-color);
+    font-size: 15px;
+    cursor: pointer;
+}
+.userEditInfo{
+    display: flex;
+}
+.userEditInfo .userInfo{
+    height: fit-content;
+    flex: 2;
+    margin: 10px 10px 0px 0px;
+    padding: 20px;
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.userEditInfo .userInfo .userMainInfo{
+    display: flex;
+}
+.userEditInfo .userInfo .userMainInfo .avater{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+.userEditInfo .userInfo .userMainInfo .personInfo{
+    display: flex;
+    flex-direction: column;
+}
+.userEditInfo .userInfo .userMainInfo .personInfo .userName{
+    font-weight: 600;
+}
+.userEditInfo .userInfo .userMainInfo .personInfo .userJob{
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.userAccountInfo{
+    margin-top: 5px;
+}
+.userAccountInfo h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--h-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+.userEditInfo .userInfo .userAccountInfo .accountData{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.userAccountInfo .accountData .Icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.userAccountInfo .accountData span{
+    font-weight: 600;
+}
+.userEditInfo .userInfoUpdate{
+    flex: 4;
+    margin: 10px 0px 0px 10px;
+    padding: 20px;
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.userEditInfo .userInfoUpdate .userUpdateTitle{
+    font-size: 30px;
+    font-weight: 600;
+}
+.userEditInfo .userInfoUpdate .userUpdateForm{
+    margin-top: 20px;
+}
+.userEditInfo .userInfoUpdate .userUpdateForm .userUpdateItemsList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.userEditInfo .userInfoUpdate .userUpdateForm .userUpdateItem{
+    display: flex;
+    flex-direction: column;
+}
+.userEditInfo .userInfoUpdate .userUpdateForm .userUpdateItem label{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.userEditInfo .userInfoUpdate .userUpdateForm .userUpdateItem input{
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 2px solid var(--border-color);
+    font-size: 15px;
+}
+.userEditInfo .userInfoUpdate .userUpdateForm .userUpdateItem input:focus{
+    outline: none;
+}
+.userInfoUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.userInfoUpdateRight button{
+    border-radius: 10px;
+    background-color: var(--button-background-color);
+    border: none;
+    color: var(--button-color);
+    padding: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 89px;
+}
+@media only screen and (max-width:450px){
+    .userEditInfo{
+        width: fit-content;
+        width: 100px;
+    }
+    .userEditInfo .userInfo{
+        display: none;
+    }
+    .userEditInfo .userInfo{
+        width: 200px;
+    }
+    .userEditInfo .userInfoUpdate .userUpdateForm .userUpdateItem input{
+        width: 150px;
+    }
+    .userInfoUpdateRight .userInfoUpdateUpload img{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        margin: 15px;
+    }
+    .userInfoUpdateRight button{
+        font-size: 15px;
+        margin: 15px;
+    }
+}

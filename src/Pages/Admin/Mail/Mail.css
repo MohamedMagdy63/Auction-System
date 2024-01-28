@@ -1,0 +1,167 @@
+.mail{
+    flex: 4;
+}
+.mail .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+.mailContiner{
+    width: 100% - 2px;
+    height: 93.2vh;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.mailContiner .Mails{
+    width: 70%;
+    position: relative;
+}
+.mailContiner .Mails .mailsContent{
+    overflow: auto;
+    padding: 10px;
+    width: 810px;
+    height: 80%;
+    display: block;
+}
+.mailContiner .Mails .mailsContent .sender{
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #90e0ef;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+.mailContiner .Mails .mailsContent .sender::before{
+    content: '';
+    width: 20px;
+    height: 15px;
+    border-radius: 80px 0px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background-color: #90e0ef;
+}
+.mailContiner .Mails .mailsContent .resiver{
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0096c7;
+    position: relative;
+    float: right;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+.mailContiner .Mails .mailsContent .resiver::before{
+    content: '';
+    width: 20px;
+    height: 15px;
+    border-radius: 0px 80px 0px 0px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: #0096c7;
+}
+.mailContiner .Mails .mailPlaceWrite{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mailContiner .Mails .mailPlaceWrite textarea{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    resize: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mailContiner .Mails .mailPlaceWrite .SendBtn{
+    margin-left: 10px;
+    width: 8%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.mailContiner .Mails .mailPlaceWrite textarea:focus{
+    outline: none;
+}
+.mailContiner .usersMail{
+    width: 30%;
+    background-color: #023e8a;
+    position: relative;
+    height: 100%;
+}
+.mailContiner .usersMail .headerBar{
+    width: 100%;
+    height: 40px;
+    background-color: #0077b6;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 14px 2px rgba(144,224,239,1);
+    -webkit-box-shadow: 0px 4px 14px 2px rgba(144,224,239,1);
+    -moz-box-shadow: 0px 4px 14px 2px rgba(144,224,239,1);
+}
+.mailContiner .usersMail .headerBar input{
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    width: 80%;
+}
+.mailContiner .usersMail .headerBar .icon{
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+}
+.mailContiner .usersMail .headerBar input:focus{
+    outline:none
+}
+
+.mailContiner .usersMail .users{
+    width: 100%;
+    height: 93%;
+    overflow: auto;
+}
+.mailContiner .usersMail .users .userData{
+    width: 93%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #90e1ef7e;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.mailContiner .usersMail .users .userData .userName{
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+.mailContiner .usersMail .users .userData .userEmail{
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 0.2em;
+}

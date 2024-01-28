@@ -1,0 +1,8 @@
+.categoreyContainer{
+    background-color:#dfe6e9;
+    height: 500vh;
+    position: relative;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+}

@@ -1,0 +1,75 @@
+.Main_Wedget{
+   flex: 2; 
+}
+.widgetLarge{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.widgetLarge .widgetLargeTitle{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.8em;
+}
+.widgetLarge .widgetLargeTable{
+    width: 100%;
+    margin: 10px;
+    border-spacing: 20px;
+    border-collapse: collapse;
+}
+.widgetLarge .widgetLargeTable thead .widgetLargeHeader{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--table-even-background-color);
+    color: var(--table-header-color);
+}
+.widgetLarge .widgetLargeTable thead .widgetLargeHeader th{
+    padding: 10px;
+}
+.widgetLarge tbody tr:nth-child(even){
+    background-color: var(--table-even-background-color);
+    color: var(--table-even-color);
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeItem{
+    text-align: center;
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeUser{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    justify-content: center;
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeUser img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeDate,
+.widgetLarge .widgetLargeTable tbody .widgetLargeAmount{
+    font-weight: 300;
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeStatus .widgetLargeButton{
+    border: none;
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeStatus .widgetLargeButton.Approved{
+    background-color: var(--Approved-button-color);
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeStatus .widgetLargeButton.Declined{
+    background-color: var(--Declined-button-color);
+}
+.widgetLarge .widgetLargeTable tbody .widgetLargeStatus .widgetLargeButton.Pending{
+    background-color: var(--Pending-button-color);
+}
+
+

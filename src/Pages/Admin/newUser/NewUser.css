@@ -1,0 +1,65 @@
+.newUser{
+    flex: 4;
+    padding: 20px;
+    color: var(--update-user);
+}
+.userUpdateTitle{
+    font-weight: 700;
+    font-size: 30px;
+}
+.userUpdateForm{
+    margin-top: 20px;
+}
+.userCreateItemsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.userCreateItem{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.userCreateItem label{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--label-color);
+}
+.userCreateItem input{
+    height: 20px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+.userCreateItem input:focus{
+    outline: none;
+}
+.userCreateGender{
+    display: flex;
+    align-items: center;
+}
+.userCreateGender>label{
+    font-size: 18px;
+    margin: 10px;
+}
+.userCreateItem select{
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+.userCreateItem select:focus{
+    outline: none;
+}
+.userCreateBtn{
+    padding: 5px 30px;
+    width: 200px;
+    margin: 50px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}

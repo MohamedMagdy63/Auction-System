@@ -1,0 +1,178 @@
+.calender{
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--calender-background-color);
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.calender_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: var(--header-calender-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+.calender_body{
+    padding: 5px;
+}
+.calender_weak_day{
+    display: grid;
+    grid-template-columns: repeat(7, 0.5fr);
+    font-weight: 600;
+    height: 20px;
+}
+.calender_weak_day div{
+    display: grid;
+    place-items: center;
+    color: var(--calender-header-color);
+}
+.calender_days{
+    display: grid;
+    grid-template-columns: repeat(7, 0.5fr);
+    gap: 2px;
+    color: var(--calender-txt-color);
+}
+.calender_days div{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+}
+.calender_days div span{
+    position: absolute;
+}
+.calender_days div span{
+    position: absolute;
+}
+.calender_days div:hover span{
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.calender_days div span:nth-child(1),
+.calender_days div span:nth-child(3){
+    width: 2px;
+    height: 0%;
+    background-color: var(--calender-txt-color);
+}
+.calender_days div:hover span:nth-child(1),
+.calender_days div:hover span:nth-child(3){
+    height: 100%;
+}
+.calender_days div span:nth-child(1){
+    left: 0;
+    bottom: 0;
+}
+.calender_days div span:nth-child(3){
+    right: 0;
+    top: 0;
+}
+.calender_days div span:nth-child(2),
+.calender_days div span:nth-child(4){
+    width: 0%;
+    height: 2px;
+    background-color: var(--calender-txt-color);
+}
+.calender_days div:hover span:nth-child(2),
+.calender_days div:hover span:nth-child(4){
+    width: 100%;
+}
+.calender_days div span:nth-child(2){
+    left: 0;
+    top: 0;
+}
+.calender_days div span:nth-child(4){
+    right: 0;
+    bottom: 0;
+}
+
+.calender_days div:hover span:nth-child(2){
+    transition-delay: 0.2s;
+}
+.calender_days div:hover span:nth-child(3){
+    transition-delay: 0.4s;
+}
+.calender_days div:hover span:nth-child(4){
+    transition-delay: 0.6s;
+}
+.curr_day{
+    border-radius: 50%;
+    background-color: var(--calender-curr-day-background-color);
+    color: var(--calender-curr-day-color);
+}
+.curr_day span{
+    display: none;
+}
+.month_list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-color: var(--calender-background-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    gap: 5px;
+    color: var(--calender-txt-color);
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    pointer-events: none;
+}
+.month_list.show{
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+}
+.month_list div {
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    height: 50%;
+}
+.month_list div div{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+.month_list div:hover {
+    background-color: var(--calender-header-color);
+    color: var(--monthList-calender-color);
+}
+.month_picker{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.month_picker:hover{
+    background-color: gainsboro;
+    color: var(--monthList-calender-color);
+}
+.year_picker{
+    display: flex;
+}
+.year_change{
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.year_change:hover{
+    background-color: gainsboro;
+    color: var(--monthList-calender-color);
+}

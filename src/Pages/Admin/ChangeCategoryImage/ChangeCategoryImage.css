@@ -1,0 +1,222 @@
+.changeCategoryImage{
+    flex: 4;
+    position: relative;
+}
+.changeCategoryImage .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #dfc;
+    border-color: #dfc transparent #dfc transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+.headerBar{
+    display: flex;
+    align-items: center;
+}
+.filterContiner{
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid var(--MuiTypography-colorInherit);
+    margin-bottom: 10px; 
+    border-radius: 10px;
+}
+.filterContiner label span{
+    color: var(--MuiTypography-colorInherit);
+}
+.newCategory{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addNewCategory{
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid var(--MuiTypography-colorInherit);
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    align-items: center;
+}
+.filterContiner label,
+.addNewCategory label{
+    color: var(--MuiTypography-colorInherit);
+    display: flex;
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.375em;
+}
+.filterContiner label input,
+.addNewCategory label input{
+    position: absolute;
+    left: -9999px;
+}
+.filterContiner label input:checked + span,
+.addNewCategory label input:checked + span{
+    background-color: mix(#fff, #00005c, 84%);
+}
+.filterContiner label input:checked + span::before,
+.addNewCategory label input:checked + span::before{
+    box-shadow: inset 0 0 0 0.4375em #8ff261;
+}
+.filterContiner label span,
+.addNewCategory label span{
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+}
+.filterContiner label span::before,
+.addNewCategory label span::before{
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #116003
+}
+.filterContiner label span:hover,
+.addNewCategory label span:hover{
+    background-color: var(--animate--button)
+}
+.addNewCategory select{
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.addNewCategory .categoryName{
+    display: flex;
+    align-items: center;
+}
+.addNewCategory .categoryName label{
+    margin-right: 5px;
+}
+.addNewCategory .categoryName input{
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+}
+.addNewCategory .addNewCategoryBtn{
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+}
+.addNewCategory .addNewCategoryBtn:hover{
+    
+    background-color: rgb(127, 217, 255);
+}
+.productImage{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.productImage .iconStyle{
+    width: 37px;
+    color: #ff4153;
+    z-index: 5;
+}
+.productImage .iconStyle:hover{
+    color: var(--admin--addemployee--hover);
+}
+.containerCategory{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.containerCategory .categoryCard{
+    width: 90%;
+    background-color: var( --admin--changeCategory--background);
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+.containerCategory .categoryCard img{
+    width: 352px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.containerCategory .categoryCard .categoryData{
+    width: 100%-5px;
+    height: fit-content;
+    background-color: #726bbc;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px;
+}
+.containerCategory .categoryCard .categoryData .categoryName{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.containerCategory .categoryCard .categoryData .changeCategoryImage{
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.containerCategory .categoryCard .categoryData .changeCategoryImage h4{
+    color: white;
+}
+.containerCategory .categoryCard .categoryData .changeCategoryImage .uplodeImage{
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.containerCategory .categoryCard .categoryData .changeCategoryImage input{
+    display: none;
+}
+.containerCategory .categoryCard .categoryData .changeCategoryImage label{
+    cursor: pointer;
+}

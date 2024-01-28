@@ -1,0 +1,38 @@
+.uploadContainer{
+    width: 100%;
+    display: grid;
+    grid-column: auto auto;
+}
+.uploadContainer .leftContainer{
+    width:20%;
+}
+.uploadContainer .rightContainer{
+    position:absolute;
+    width: 70%;
+    margin-left: 15%;
+    height: 100vh;
+    
+}
+.uploadContainer .rightContainer .subRightContainerBar{
+    width: 100%;
+    margin-top: 6%;
+    margin-left: 15%;
+    position: relative;
+}
+@media only screen and (max-width:1000px) {
+    .uploadContainer{
+        display: block;
+    }
+    .uploadContainer .leftContainer{
+        width: 90%;
+    }
+    .uploadContainer .rightContainer{
+        margin-left: 2.5%;
+        height: 100vh;
+        
+    }
+    .uploadContainer .rightContainer .subRightContainerBar{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,91 @@
+.cat-container{
+    flex: 1;
+    margin: 30px;
+    height: 40vh;
+    position: relative;
+}
+.cat-container img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 0 50px 0 50px;
+}
+.cat-container .cat-layout{
+    position: relative;
+    border-radius: 0 50px 0 50px;
+    background-color: #00000055;
+    width: 100%;
+    height: 100%;
+}
+.cat-container .endTime{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    padding: 5px;
+}
+.cat-container .cat-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cat-container .cat-title{
+    color:#f1f2f6;
+    font-weight: 800;
+    font-size: 20px;
+    height: auto;
+    margin-bottom: 5px;
+    opacity: 1;
+}
+.cat-container .cat-price{
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 100%;
+    color: white;
+    opacity: 1;
+}
+.cat-container .cat-desc{
+    margin: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: normal;
+    color:white;
+    font-weight: 600;
+    opacity: 0.5;
+}
+.cat-container .cat-desc:hover{
+    opacity: 1;
+}
+.cat-container .cat-massage{
+    margin-bottom: 8px;
+    font-size: 15px;
+    letter-spacing: normal;
+    color: black;
+    font-weight: 400;
+}
+.cat-container .cat-massage:hover{
+    color: white;
+}
+.cat-container .enter{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    opacity:1;
+    color: white;
+    cursor: pointer;
+}
+.cat-container .enter:hover{
+    color: #eccc68;
+}
+@media only screen and (max-width:450px){
+    .cat-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

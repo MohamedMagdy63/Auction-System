@@ -1,0 +1,72 @@
+.reports{
+    flex: 4;
+    position: relative;
+}
+.reports .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+.ReportoverView{
+    color: var( --admin--deposite--slides);
+    width: 97%;
+    padding: 15px;
+    background-color:var(--admin--report--background) ;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.overviewTitle{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.reportContiner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.EmplyeeReport{
+    width: 80%;
+    background-color:var( --admin--report--background);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    margin-bottom: 30px;
+}
+.reportHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reportTitle{
+    font-weight: 700;
+    font-size: 20px;
+}
+.reportUpdate{
+    font-weight: 600;
+    opacity: 0.6;
+}
+.reportUpdate .spanclass{
+    margin-left: 10px;
+    color: red;
+}
+.viewReport{
+    background-color: #e9ecef;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.reportNumber{
+    font-size: 30px;
+    font-weight: 800;
+}

@@ -1,0 +1,175 @@
+.user{
+    flex: 4;
+    padding: 20px;
+    color: var(--update-user);
+}
+.user .test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background: var(--loader-color);
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #dfc;
+    border-color: #dfc transparent #dfc transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+.userEditWerpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.userEditWerpper .userEditTitle{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 0.8em;
+}
+.userEditInfo{
+    display: flex;
+}
+.userEditInfo .userInfo{
+    flex: 2;
+    margin: 10px 10px 0px 0px;
+    padding: 20px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.userEditInfo .userInfo .userMainInfo{
+    display: flex;
+}
+.userEditInfo .userInfo .userMainInfo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+.userEditInfo .userInfo .userMainInfo .personInfo{
+    display: flex;
+    flex-direction: column;
+}
+.userEditInfo .userInfo .userMainInfo .personInfo .userName{
+    font-weight: 600;
+}
+.userEditInfo .userInfo .userMainInfo .personInfo .userJob{
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.userAccountInfo{
+    margin-top: 30px;
+}
+.userAccountInfo h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--h-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+.userAccountInfo .accountData{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.userAccountInfo .accountData .Icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.userAccountInfo .accountData span{
+    font-weight: 600;
+}
+.userEditInfo .userDetailsInfoContiner{
+    flex: 4;
+    margin: 10px 0px 0px 10px;
+    padding: 20px;
+    box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -webkit-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+    -moz-box-shadow: 5px 10px 15px 4px var(--box-shadow-color);
+}
+.userEditInfo .userDetailsInfoContiner .userUpdateTitle{
+    font-size: 30px;
+    font-weight: 600;
+}
+.userEditInfo .userDetailsInfoContiner .userForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.userEditInfo .userDetailsInfoContiner .userForm .userDetailsInfoList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.userEditInfo .userDetailsInfoContiner .userForm .userDetailsInfo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.userEditInfo .userDetailsInfoContiner .userForm .userDetailsInfo label{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.userEditInfo .userDetailsInfoContiner .userForm .userDetailsInfo .dataIcon{
+    border: 1px solid var( --admin-userjsx-border-info-details);
+    padding: 5px;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    color: var(--admin-userjsx-text-info-details);
+}
+.userEditInfo .userDetailsInfoContiner .userForm .userDetailsInfo .dataIcon .Icon{
+    margin-right: 5px;
+}
+.effect .userDetailsInfo:nth-child(2){
+    margin-top: 30px;
+}
+.effect .userDetailsInfo:nth-child(2) .dataIcon .block{
+    width: 100%;
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
+.effect .userDetailsInfo:nth-child(2) .dataIcon .active{
+    width: 100%;
+    text-align: center;
+    color: var(--admin-userjsx-text-active-details);
+    font-size: 20px;
+}

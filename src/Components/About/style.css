@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+.aboutContainer{
+    font-family: 'Lora', serif;
+    color: black;
+    scroll-behavior: unset;
+    overflow-x: hidden;
+}
+.aboutContainer .aboutImgContainer{
+    display: flex;
+    object-fit: cover;
+    width:100%;
+    height: 40vh;
+}
+.aboutContainer .layout{
+    position: absolute;
+    margin-top: 6%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42vh;
+    background-color: rgba(23, 23, 23, 0.384);
+}
+.aboutContainer .aboutTitle{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size:30px;
+    font-weight: 600;
+    color: rgb(251, 243, 243);
+}
+.aboutContainer .aboutDescribe{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    justify-content: space-between;
+    width: 25%;
+    font-size: 100%;
+    color: rgb(251, 243, 243);
+}
+.aboutContainer .aboutAimTitle{
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(251, 243, 243);
+}
+.aboutContainer .aboutAimDescribe{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+}
+.aboutContainer .centerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: -2% 0 0 12.5%;
+}
+.aboutContainer .bigContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.aboutContainer .blockContainer{
+    padding: 5px;
+}
+.aboutContainer .blockContainer::before{
+    content: '';
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -20px;
+    width: 5px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 20px;
+}
+.aboutContainer .blockContainer:nth-child(1)::before{
+    width: 0;
+}
+.aboutContainer .blockContainer .containerTitle{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.aboutContainer .containerTitle{
+    font-size: 20px;
+    text-align: center;
+    color: darkslategray;
+}
+.aboutContainer .containerDescription{
+    font-size: 16px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.aboutContainer .titleContainer .stratigy .title{
+    width: 100%;
+    margin-top: 50px ;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.aboutContainer .blackCardContainer{
+    margin-top: 75px;
+    padding-top: 5px;
+    width: 1500px;
+    height: 100vh;
+    color: aliceblue;
+    background-color: black;
+    box-shadow: rgba(55, 0, 55, 0.989) 0px 22px 70px 4px;
+    text-align: center;
+}
+.aboutContainer .blackCardContainer .blackCardTitle .title_p{
+    color: gold;
+
+}
+.aboutContainer .blackCardContainer.blackCardTitle .title_h2{
+    color: aliceblue;
+}
+.title_div{
+    margin-left: 48%;
+    width: 5%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 217, 0, 0.655);
+}
+.continersCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+.blackCardBlocks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+    width: 60%;
+}
+.blackCardBlocks .blackCardItem{
+    position: relative;
+    border: 1px solid white;
+    display: flex;
+    width: 400px;
+    height: 250px;
+}
+.blackCardBlocks .blackCardItem:nth-child(4),
+.blackCardBlocks .blackCardItem:nth-child(5){
+    margin-left: 55%;
+}
+.continersCards .blackCardBlocks .blackCardItem .aboutImage{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.continersCards .blackCardBlocks .blackCardItem .aboutOurTeam{
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    margin: 8%;
+}
+.continersCards .blackCardBlocks .blackCardItem .aboutOurTeam p span{
+    color: gold;
+    font-weight: 700;
+}
+.continersCards .blackCardBlocks .blackCardItem .aboutOurTeam .socialContainer{
+    margin: 1%;
+}
+.continersCards .blackCardBlocks .blackCardItem .aboutOurTeam .socialContainer .socialContainerFacebook:hover{
+    margin: 10%;
+}
+@media only screen and (max-width:1000px) {
+    .aboutContainer{
+        width: 100%;
+    }
+    .aboutContainer .aboutImgContainer{
+        width: 100%;
+        height: 35vh;
+    }
+    .aboutContainer .aboutTitle{
+        font-size: 15px;
+    }
+    .aboutContainer .aboutDescribe{
+        top: 25% ;
+        font-size: 10px;
+    }
+    .aboutContainer .aboutAimTitle{
+        font-size: 15px;
+    }
+    .aboutContainer .aboutAimDescribe{
+        top: 25% ;
+        font-size: 10px;
+    }
+    .aboutContainer .bigContainer{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+    .aboutContainer .blockContainer::before{
+        content: '';
+        position: absolute;
+        margin-top: -4%;
+        margin-left: 4%;
+        width: 200px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, 0.541);
+        border-radius: 20px;
+    }
+    .aboutContainer .titleContainer .stratigy .title{
+        display: none;
+    }
+    .avatar{
+        display: none;
+    }
+    .aboutContainer .blackCardContainer{
+        width: 100%;
+        height: 240vh;
+    }
+    .blackCardBlocks{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    .blackCardBlocks .blackCardItem{
+        width: 300px;
+    }
+    .blackCardBlocks .blackCardItem:nth-child(4),
+    .blackCardBlocks .blackCardItem:nth-child(5){
+        margin: 0%;
+    }
+    .continersCards .blackCardBlocks .blackCardItem .aboutOurTeam{
+        font-size: 12px;
+    }
+    
+}

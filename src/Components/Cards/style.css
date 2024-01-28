@@ -1,0 +1,14 @@
+.navLink{
+    color:black;
+    text-decoration:none;
+}
+.imageContiner img{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    user-select: none;
+    z-index: 2;
+}
+.imageContiner img:hover{
+    transform: scale(1.5);
+}

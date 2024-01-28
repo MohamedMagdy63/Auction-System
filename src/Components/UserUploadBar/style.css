@@ -1,0 +1,65 @@
+.uploadBarContainer{
+    width: 100%;
+}
+.uploadBarContainer .barDisplay{
+    background-color: #f1f2f6;
+    width: inherit;
+    color: #1e90ff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.uploadBarContainer .barDisplay .barItemDisplay{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    
+}
+.uploadBarContainer  .inputField{
+   margin: 15px; 
+}
+.uploadBarContainer .inputFieldRadio{
+    margin: 15px; 
+    width: 190px;
+}
+.uploadBarContainer .inputFieldtd{
+    margin: 15px; 
+    width: 190px;
+}
+.uploadBarContainer .inputFieldCatogery{
+    width: 800px;
+}
+.uploadBarContainer .uploadButton{
+    width: 45%;
+    height: 8vh;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 3% 0 3% 4%;
+    background-color: #1e90ff;
+}
+@media only screen and (max-width:1000px) {
+    .uploadBarContainer{
+        width: 100%;
+    }
+    .css-1bz4dfx{
+        width: 117% !important;
+    }
+    .uploadBarContainer .barDisplay{
+        width: 100%;
+        margin-left: -1.5%;
+    }
+    .uploadBarContainer .barDisplay .barItemDisplay{
+        font-size: 10px;
+    }
+    .uploadBarContainer .tabPanelContainer{
+        width: 100%;
+        overflow: hidden;
+    }
+    .uploadBarContainer .uploadButton{
+        width: 100%;
+        margin: 5%;
+    }
+    .uploadContainer .rightContainer .subRightContainerBar{
+        margin-left: 9%
+    }
+}
